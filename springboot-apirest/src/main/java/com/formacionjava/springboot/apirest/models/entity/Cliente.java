@@ -26,7 +26,7 @@ public class Cliente implements Serializable {
 	private String apellido;
 	private String email;
 	private String telefono;
-	//le da nombre a la columna en la DB
+	//Por defecto las columnas llevan el nombre del atributo. Si queremos cambiar su nombre utilizamos la anotación @Column
 	@Column(name = "created_at")
 	//Especificamos que los datos son de tipo DATE
 	@Temporal(TemporalType.DATE)
